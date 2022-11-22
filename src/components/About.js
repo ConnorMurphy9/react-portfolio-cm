@@ -1,11 +1,13 @@
-// import '../styles/About.css';
-// import '../App.css';
 import React from "react";
+import { motion } from "framer-motion/dist/es/index";
+
 function About () {
     
     return (
-        <section id="about">
-        <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+      <section id="about">
+      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+      <motion.div animate={{ x: 100 }}
+        transition={{ ease: "easeOut", duration: 2 }}className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-blue-100 text-black dark:bg-blue-500 dark:text-white"> 
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-top text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
               Hello, I'm Connor.
@@ -34,12 +36,11 @@ function About () {
               src="./resume_img.jpg"
             />
           </div>
+          </motion.div>
         </div>
       </section>
                
-                //  <img src="./resume_img.jpg" className="resume" alt="My resume"/>
-                
-         
+      
     )
 }
 

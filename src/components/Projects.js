@@ -1,6 +1,5 @@
-// import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 // import { projects } from "../data";
 
 export default function Projects() {
@@ -46,7 +45,8 @@ export default function Projects() {
     //   </div>
     // </section>
     <h2> Apps I Have Built:
-      
+      <motion.div animate={{ x: 100 }}
+        transition={{ ease: "easeOut", duration: 2 }}className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-blue-100 text-black dark:bg-blue-500 dark:text-white">
         <section id="projects" className="text-white bg-gray-900 body-font">
             Cocktail & Dinner Recipe Generator
             <a href="https://connormurphy9.github.io/project-one/">
@@ -61,17 +61,13 @@ export default function Projects() {
               src="./chat_engine.png"></img>
             </a>
           
-            {/* <a href="">
-            <img className="object-cover object-center rounded"
-              alt="My Recipe Generator App"
-              src="./Project_1_image.png"></img>
-            </a> */}
+       
 
 
-
+        
       </section>
 
-
+      </motion.div>
     </h2>
     
 
