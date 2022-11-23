@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 html {
-    height: 80%
+    height: 40%;
+    width: 100%;
+    background-color: rgb(220, 233, 233);
 }
 
 body {
-    height: 50%
+    min-height: 100vh;
+    /* background-color: black; */
 }
 
 img {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -32,9 +36,6 @@ a {
     width: 100px;
 }
 
-/* img.object-cover.object-center.rounded.portrait {
-    height:30%;
-} */
 
 
 
